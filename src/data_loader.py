@@ -46,7 +46,8 @@ def load_high_res_image(image_path):
     if_rgbd_input_32_scaled = if_rgbd_input_processed / scale_factors[np.newaxis, np.newaxis, :]
     
     # Remove specific channels
-    high_res_image = np.delete(if_rgbd_input_32_scaled, np.s_[7, 10, 11, 26, 30], axis=2)
+    # high_res_image = np.delete(if_rgbd_input_32_scaled, np.s_[7, 10, 11, 26, 30], axis=2)
+    high_res_image = if_rgbd_input_32_scaled
     
     logging.info(f"High-resolution image loaded. Shape: {high_res_image.shape}")
     return high_res_image
