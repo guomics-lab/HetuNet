@@ -194,7 +194,8 @@ def train_model_with_L1(args, high_res_image, shared_mask, all_protein_specific_
                 pbar.set_postfix(
                     mae=avg_mae_loss.item(),
                     tv=(args.tv_lambda * avg_tv_loss).item(),
-                    corr=(args.correlation_lambda * avg_corr_loss).item()
+                    corr=(args.correlation_lambda * avg_corr_loss).item(),
+                    refresh=False
                 )
                 
                 epoch_total_loss += final_batch_loss.item()
