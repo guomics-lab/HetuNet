@@ -20,7 +20,12 @@ class PearsonCorrelationLoss(nn.Module):
         y = y.float()
         vx = x - torch.mean(x)
         vy = y - torch.mean(y)
-        corr = torch.sum(vx * vy) / (torch.sqrt(torch.sum(vx ** 2)) * torch.sqrt(torch.sum(vy ** 2)) + self.eps)
+        
+        var_x = torch.sum(vx ** 2) + self.eps
+        var_y = torch.sum(vy ** 2) + self.eps
+        
+        corr = torch.sum(vx * vy) / (torch.sqrt(var_x) * torch.sqrt(var_y))
+        # corr = torch.sum(vx * vy) / (torch.sqrt(torch.sum(vx ** 2)) * torch.sqrt(torch.sum(vy ** 2)) + self.eps)
         return 1 - corr
 
 
