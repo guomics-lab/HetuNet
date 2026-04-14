@@ -76,7 +76,7 @@ conda env create -f environment.yml
 conda activate hetunet
 ```
 
-> Note: The time it takes to download and install the environment depends entirely on your network speed (about 20 minutes).
+> Note: The time it takes to download and install the environment depends entirely on your network speed (**about 20 minutes**).
 
 ## Usage
 
@@ -122,7 +122,7 @@ python main.py \
     --no_resume
 ```
 
-> **Performance Reference:** Training on the provided demo data takes approximately 10 minutes per epoch (Tested on: NVIDIA GeForce RTX 4060 Ti, 16GB RAM, Python 3.12.12, PyTorch 2.11.0+cu126, Pandas 2.3.3, NumPy 2.2.6).
+> **Performance Reference:** Training on the provided demo data takes **approximately 10 minutes per epoch** (Tested on: NVIDIA GeForce RTX 4060 Ti, 16GB RAM, Python 3.12.12, PyTorch 2.11.0+cu126, Pandas 2.3.3, NumPy 2.2.6).
 
 ## Command-line Arguments
 
