@@ -82,10 +82,10 @@ conda activate hetunet
 
 ```bash
 python main.py \
-    --image_path /path/to/image.ome.tif \
-    --mask_path /path/to/mask.pkl \
-    --protein_path /path/to/protein_data.csv \
-    --output_dir ./outputs
+    --image_path ./demo/demo_IF_image.tif \
+    --mask_path ./demo/demo_mask.pkl \
+    --protein_path ./demo/demo_MS_data.csv \
+    --output_dir ./outputs_test
 ```
 
 ### Advanced Options
@@ -96,7 +96,7 @@ python main.py \
     --mask_path /path/to/mask.pkl \
     --protein_path /path/to/protein_data.csv \
     --output_dir ./outputs \
-    --epochs 50 \
+    --epochs 25 \
     --batch_size 128 \
     --lr 0.0001 \
     --tv_lambda 1e-5 \
