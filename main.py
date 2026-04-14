@@ -35,7 +35,8 @@ def main():
     all_protein_specific_data = load_protein_data(
         args.protein_path,
         args.protein_name,
-        shared_mask
+        shared_mask,
+        args.fill_na
     )
     
     # Train the model
