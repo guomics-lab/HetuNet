@@ -45,7 +45,7 @@ HetuNet/
 
 We recommend using Conda to manage your environment. HetuNet requires **Python 3.8 or higher**.
 
-### Option 1: Manual Setup with Conda and Pip
+#### Option 1: Manual Setup with Conda and Pip
 If you prefer to configure the environment yourself (for example, to install a specific PyTorch version that matches your machine's CUDA drivers), you can create a fresh conda environment and install the dependencies manually:
 
 ```bash
@@ -66,7 +66,7 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 pip install -r requirements.txt
 ```
 
-### Option 2: Quick Setup using `environment.yml`
+#### Option 2: Quick Setup using `environment.yml`
 This method automatically creates a conda environment named `hetunet` with Python and all required dependencies.
 
 ```bash
@@ -76,11 +76,11 @@ conda env create -f environment.yml
 conda activate hetunet
 ```
 
-> Note: The time it takes to download and install the environment depends entirely on your network speed.
+> Note: The time it takes to download and install the environment depends entirely on your network speed (about 20 minutes).
 
 ## Usage
 
-### Basic Training
+#### Basic Training
 
 ```bash
 python main.py \
@@ -90,7 +90,7 @@ python main.py \
     --output_dir ./outputs_test
 ```
 
-### Advanced Options
+#### Advanced Options
 
 ```bash
 python main.py \
@@ -109,7 +109,7 @@ python main.py \
     --protein_name "VIM,CDH1"
 ```
 
-### Training from Scratch
+#### Training from Scratch
 
 To ignore existing checkpoints and start fresh:
 ```bash
@@ -120,17 +120,18 @@ python main.py \
     --output_dir ./outputs \
     --no_resume
 ```
+> **Performance Reference:** Training on the provided demo data takes approximately 10 minutes per epoch (Tested on: NVIDIA GeForce RTX 4060 Ti, 16GB RAM, Python 3.12.12, PyTorch 2.11.0+cu126, Pandas 2.3.3, NumPy 2.2.6).
 
 ## Command-line Arguments
 
-### Required Arguments
+#### Required Arguments
 
 - `--image_path`: Path to the high-resolution ome.tif image file
 - `--mask_path`: Path to the tissue mask pickle file
 - `--protein_path`: Path to the protein data CSV file
 - `--output_dir`: Directory to save checkpoints and logs
 
-### Optional Arguments
+#### Optional Arguments
 
 - `--epochs`: Number of training epochs (default: 25)
 - `--batch_size`: Batch size for training (default: 128)
@@ -155,34 +156,34 @@ The training process generates the following outputs in the specified output dir
 
 ## Model Architecture
 
-### MultiScalePatchCNN
+#### MultiScalePatchCNN
 - Multi-stage convolutional network
 - Outputs features at shallow, middle, and deep scales
 - Uses SiLU activation and batch normalization
 
-### GatedProteinHead
+#### GatedProteinHead
 - Learnable gating mechanism for multi-scale feature fusion
 - Squeeze-and-Excitation (SE) attention
 - Protein-specific prediction head
 
-### Loss Functions
+#### Loss Functions
 - L1 (MAE) Loss: Reconstruction accuracy
 - Total Variation Loss: Spatial smoothness
 - Pearson Correlation Loss: Prediction-target alignment
 
 ## Data Format
 
-### Image File
+#### Image File
 - Format: OME-TIFF
 - Multi-channel high-resolution microscopy image
 - Expected to have multiple channels that will be preprocessed
 
-### Mask File
+#### Mask File
 - Format: Pickle (.pkl)
 - Boolean mask indicating tissue regions
 - Shape should match the low-resolution grid
 
-### Protein Data File
+#### Protein Data File
 - Format: CSV
 - Columns: 'protein_names', 'Genes', 'Names', followed by row and column expression values
 - Each protein has H+W values (H rows, W columns)
