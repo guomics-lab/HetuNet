@@ -9,5 +9,5 @@ dependencies:
   - python>=3.8
   - pip
   - pip:
-    - -i https://pypi.tuna.tsinghua.edu.cn/simple # 也可以在这里指定 pip 镜像
+    - -i https://pypi.tuna.tsinghua.edu.cn/simple
     - -r requirements.txt
