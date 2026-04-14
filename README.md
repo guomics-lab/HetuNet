@@ -1,6 +1,7 @@
 # HetuNet: CNN-based Protein Reconstruction
 
 A modular deep learning pipeline for spatio-temporal protein reconstruction using multi-scale CNN architecture.
+<img width="4270" height="3238" alt="Git_figure_demo" src="https://github.com/user-attachments/assets/c7f92c6e-478b-41de-a1aa-038b729ec907" />
 
 ## Project Structure
 
