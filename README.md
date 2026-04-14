@@ -106,7 +106,8 @@ python main.py \
     --patch_size 13 \
     --seed 888 \
     --num_workers 4 \
-    --protein_name "VIM,CDH1"
+    --protein_name "VIM,CDH1" \
+    --fill_na True
 ```
 
 #### Training from Scratch
@@ -146,6 +147,7 @@ python main.py \
 - `--num_workers`: Number of data loading workers (default: 4)
 - `--no_resume`: Start training from scratch, ignoring checkpoints
 - `--protein_name`: Specific protein(s) to train (default: "all")
+- `--fill_na`: Enable filling NA (missing) values in protein data with the neighbor mean (default: False)
 
 ## Output
 
