@@ -153,8 +153,6 @@ The training process generates the following outputs in the specified output dir
 
 - `epoch_XXXX.pth`: Checkpoint files containing model weights, optimizer state, and predictions
 - `loss_curve_total.png`: Total training loss curve
-- `loss_curve_mae.png`: MAE reconstruction loss curve
-- `loss_curve_tv.png`: TV regularization loss curve
 
 ## Model Architecture
 
