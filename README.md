@@ -45,14 +45,33 @@ HetuNet/
 
 We recommend using Conda to manage your environment. HetuNet requires **Python 3.8 or higher**.
 
-1. Clone the repository:
+### Option 1: Manual Setup with Conda and Pip
+If you prefer to configure the environment yourself (for example, to install a specific PyTorch version that matches your machine's CUDA drivers), you can create a fresh conda environment and install the dependencies manually:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Wandershy/HetuNet.git
+cd HetuNet
+
+# 2. Create and activate a new conda environment with Python 3.8+
+conda create -n hetunet python=3.9
+conda activate hetunet
+
+# 3. Install PyTorch with appropriate CUDA support for your system (Recommended for GPU usage)
+# Please visit https://pytorch.org/get-started/locally/ for the exact command suitable for your hardware.
+# Example for CUDA 12.6:
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+
+# 4. Install the remaining dependencies
+pip install -r requirements.txt
+```
+
+### Option 2: Quick Setup using `environment.yml`
+This method automatically creates a conda environment named `hetunet` with Python and all required dependencies.
+
 ```bash
 git clone https://github.com/Wandershy/HetuNet.git
 cd HetuNet
-```
-
-2. Create and activate the conda environment:
-```bash
 conda env create -f environment.yml
 conda activate hetunet
 ```
