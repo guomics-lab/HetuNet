@@ -1,4 +1,4 @@
-name: hetunet
+name: hetunet2
 channels:
   - pytorch
   - defaults
