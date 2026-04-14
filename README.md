@@ -74,12 +74,12 @@ python main.py \
     --mask_path /path/to/mask.pkl \
     --protein_path /path/to/protein_data.csv \
     --output_dir ./outputs \
-    --epochs 150 \
-    --batch_size 16 \
+    --epochs 50 \
+    --batch_size 128 \
     --lr 0.0001 \
     --tv_lambda 1e-5 \
-    --correlation_lambda 1.0 \
-    --patch_size 25 \
+    --correlation_lambda 5.0 \
+    --patch_size 13 \
     --seed 888 \
     --num_workers 4 \
     --protein_name "VIM,CDH1"
