@@ -152,16 +152,18 @@ The training process generates the following outputs in the specified output dir
 
 ### Protein Data File
 - Format: CSV
-- Columns: 'Genes', 'Names', followed by row and column expression values
+- Columns: 'protein_names', 'Genes', 'Names', followed by row and column expression values
 - Each protein has H+W values (H rows, W columns)
 
 ## License
 
 Please refer to the repository license file.
 
-## Citation
+## How to Cite
 
-If you use this code in your research, please cite our work.
+If you use this code in your research, please cite our work:
+
+Wang, S., Dong, Z., Wu, C., Chen, J., Li, C., Sheng, J., Li, X., Chen, Y., & Guo, T. (2026). Multimodal AI-enabled mass spectrometry-based expansion proteomics for whole-slide at single-cell resolution. LangTaoSha Preprint Server. https://doi.org/10.65215/LTSpreprints.2026.02.20.000134
 
 ## Contact
 
