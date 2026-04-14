@@ -63,7 +63,7 @@ def load_mask(mask_path):
     return shared_mask
 
 
-def load_protein_data(protein_path, protein_name, shared_mask):
+def load_protein_data(protein_path, protein_name, shared_mask, fill_na=False):
     """Load and process protein data."""
     logging.info(f"Loading protein data from {protein_path}...")
     
@@ -73,7 +73,8 @@ def load_protein_data(protein_path, protein_name, shared_mask):
     rawdata.iloc[:, 1] = rawdata.iloc[:, 1].fillna(rawdata.iloc[:, 0])
     cols = rawdata.columns[2:]
     rawdata[cols] = (rawdata[cols].to_numpy(dtype=float))
-    rawdata.iloc[:, 2:] = rawdata.iloc[:, 2:].apply(fill_na_with_neighbor_mean, axis=1)
+    if fill_na:
+        rawdata.iloc[:, 2:] = rawdata.iloc[:, 2:].apply(fill_na_with_neighbor_mean, axis=1)
     
     # Determine proteins to process
     if protein_name == "all":
