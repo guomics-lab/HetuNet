@@ -71,6 +71,8 @@ def load_protein_data(protein_path, protein_name, shared_mask):
     rawdata = pd.read_csv(protein_path)
     rawdata.iloc[:, 2:] = rawdata.iloc[:, 2:].fillna(0)
     rawdata.iloc[:, 1] = rawdata.iloc[:, 1].fillna(rawdata.iloc[:, 0])
+    cols = rawdata.columns[2:]
+    rawdata[cols] = (rawdata[cols].to_numpy(dtype=float))
     rawdata.iloc[:, 2:] = rawdata.iloc[:, 2:].apply(fill_na_with_neighbor_mean, axis=1)
     
     # Determine proteins to process
