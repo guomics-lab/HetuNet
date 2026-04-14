@@ -103,6 +103,11 @@ def parse_args():
         default="all",
         help='Protein name that you wanna train.'
     )
+    parser.add_argument(
+        '--fill_na',
+        action='store_true',
+        help='Flag to enable filling NA values with neighbor mean.'
+    )
     
     args = parser.parse_args()
     
