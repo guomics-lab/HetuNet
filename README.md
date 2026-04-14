@@ -43,15 +43,18 @@ HetuNet/
 
 ## Installation
 
+We recommend using Conda to manage your environment. HetuNet requires **Python 3.8 or higher**.
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/Wandershy/HetuNet.git
 cd HetuNet
 ```
 
-2. Install dependencies:
+2. Create and activate the conda environment:
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate hetunet
 ```
 
 ## Usage
