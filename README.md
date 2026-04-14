@@ -174,7 +174,7 @@ The training process generates the following outputs in the specified output dir
 ## Data Format
 
 #### Image File
-- Format: OME-TIFF
+- Format: OME-TIFF/TIFF
 - Multi-channel high-resolution microscopy image
 - Expected to have multiple channels that will be preprocessed
 
