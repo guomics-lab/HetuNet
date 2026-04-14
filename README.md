@@ -18,7 +18,10 @@ HetuNet/
 │   ├── train.py                      # Training logic
 │   ├── config.py                     # Argument parser
 │   └── utils.py                      # Utility functions
-└── _backup_CNN_based_reconstruction_27features_cor_rawnorm_ifmedian_multiGPU.py  # Original script backup
+└── demo/                             # Demo data
+    ├── demo_IF_image.tif             # Demo input image
+    ├── demo_MS_data.csv              # Demo input protein_data
+    └── demo_mask.pkl                 # Demo input mask
 ```
 
 ## Features
