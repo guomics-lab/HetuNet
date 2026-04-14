@@ -28,7 +28,7 @@ HetuNet/
 │   └── utils.py                      # Utility functions
 └── demo/                             # Demo data
     ├── demo_IF_image.tif             # Demo input image
-    ├── demo_MS_data.csv              # Demo input protein_data
+    ├── demo_row_col_data.csv         # Demo input expression_data
     └── demo_mask.pkl                 # Demo input mask
 ```
 
@@ -76,6 +76,8 @@ conda env create -f environment.yml
 conda activate hetunet
 ```
 
+> Note: The time it takes to download and install the environment depends entirely on your network speed.
+
 ## Usage
 
 ### Basic Training
@@ -84,7 +86,7 @@ conda activate hetunet
 python main.py \
     --image_path ./demo/demo_IF_image.tif \
     --mask_path ./demo/demo_mask.pkl \
-    --protein_path ./demo/demo_MS_data.csv \
+    --protein_path ./demo/demo_row_col_data.csv \
     --output_dir ./outputs_test
 ```
 
@@ -94,7 +96,7 @@ python main.py \
 python main.py \
     --image_path ./demo/demo_IF_image.tif \
     --mask_path ./demo/demo_mask.pkl \
-    --protein_path ./demo/demo_MS_data.csv \
+    --protein_path ./demo/demo_row_col_data.csv \
     --output_dir ./outputs_test \
     --epochs 25 \
     --batch_size 128 \
@@ -112,9 +114,9 @@ python main.py \
 To ignore existing checkpoints and start fresh:
 ```bash
 python main.py \
-    --image_path /path/to/image.ome.tif \
-    --mask_path /path/to/mask.pkl \
-    --protein_path /path/to/protein_data.csv \
+    --image_path ./demo/demo_IF_image.tif \
+    --mask_path ./demo/demo_mask.pkl \
+    --protein_path ./demo/demo_row_col_data.csv \
     --output_dir ./outputs \
     --no_resume
 ```
