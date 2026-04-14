@@ -98,8 +98,8 @@ python main.py \
     --output_dir ./outputs_test \
     --epochs 25 \
     --batch_size 128 \
-    --lr 0.0001 \
-    --tv_lambda 1e-5 \
+    --lr 0.001 \
+    --tv_lambda 1e-4 \
     --correlation_lambda 5.0 \
     --patch_size 13 \
     --seed 888 \
