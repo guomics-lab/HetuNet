@@ -47,7 +47,7 @@ def parse_args():
     parser.add_argument(
         '--batch_size',
         type=int,
-        default=16,
+        default=128,
         help='Batch size for training.'
     )
     parser.add_argument(
@@ -71,13 +71,13 @@ def parse_args():
     parser.add_argument(
         '--correlation_lambda',
         type=float,
-        default=1,
+        default=5,
         help='Weight for the Pearson Correlation loss term.'
     )
     parser.add_argument(
         '--patch_size',
         type=int,
-        default=25,
+        default=13,
         help='Side length of the square patches.'
     )
     parser.add_argument(
