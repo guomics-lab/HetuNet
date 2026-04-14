@@ -130,13 +130,13 @@ python main.py \
 
 ### Optional Arguments
 
-- `--epochs`: Number of training epochs (default: 150)
-- `--batch_size`: Batch size for training (default: 16)
-- `--lr`: Base learning rate (default: 0.0001)
-- `--cnn_lr_fold`: CNN learning rate multiplier (default: 1.0)
-- `--tv_lambda`: Total Variation regularization weight (default: 1e-5)
-- `--correlation_lambda`: Pearson correlation loss weight (default: 1.0)
-- `--patch_size`: Size of square patches (default: 25)
+- `--epochs`: Number of training epochs (default: 25)
+- `--batch_size`: Batch size for training (default: 128)
+- `--lr`: Base learning rate (default: 0.001)
+- `--cnn_lr_fold`: CNN learning rate multiplier (default: 0.53)
+- `--tv_lambda`: Total Variation regularization weight (default: 1e-4)
+- `--correlation_lambda`: Pearson correlation loss weight (default: 5.0)
+- `--patch_size`: Size of square patches (default: 13)
 - `--seed`: Random seed for reproducibility (default: 888)
 - `--num_workers`: Number of data loading workers (default: 4)
 - `--no_resume`: Start training from scratch, ignoring checkpoints
