@@ -112,6 +112,7 @@ python main.py \
 #### Training from Scratch
 
 To ignore existing checkpoints and start fresh:
+
 ```bash
 python main.py \
     --image_path ./demo/demo_IF_image.tif \
@@ -120,6 +121,7 @@ python main.py \
     --output_dir ./outputs \
     --no_resume
 ```
+
 > **Performance Reference:** Training on the provided demo data takes approximately 10 minutes per epoch (Tested on: NVIDIA GeForce RTX 4060 Ti, 16GB RAM, Python 3.12.12, PyTorch 2.11.0+cu126, Pandas 2.3.3, NumPy 2.2.6).
 
 ## Command-line Arguments
