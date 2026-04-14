@@ -280,15 +280,15 @@ def train_model_with_L1(args, high_res_image, shared_mask, all_protein_specific_
                 os.path.join(args.output_dir, "loss_curve_total.png"),
                 title='Total Training Loss'
             )
-            plot_loss_curve(
-                history['epoch_mae_loss'],
-                os.path.join(args.output_dir, "loss_curve_mae.png"),
-                title='MAE Reconstruction Loss'
-            )
-            plot_loss_curve(
-                history['epoch_tv_loss'],
-                os.path.join(args.output_dir, "loss_curve_tv.png"),
-                title='TV Regularization Loss'
-            )
+            # plot_loss_curve(
+            #     history['epoch_mae_loss'],
+            #     os.path.join(args.output_dir, "loss_curve_mae.png"),
+            #     title='MAE Reconstruction Loss'
+            # )
+            # plot_loss_curve(
+            #     history['epoch_tv_loss'],
+            #     os.path.join(args.output_dir, "loss_curve_tv.png"),
+            #     title='TV Regularization Loss'
+            # )
     
     logging.info("--- Training completed. ---")
