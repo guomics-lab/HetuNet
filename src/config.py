@@ -53,19 +53,19 @@ def parse_args():
     parser.add_argument(
         '--lr',
         type=float,
-        default=0.0001,
+        default=0.001,
         help='Base learning rate.'
     )
     parser.add_argument(
         '--cnn_lr_fold',
         type=float,
-        default=1.0,
+        default=0.53,
         help='Fold change for CNN learning rate compared to base.'
     )
     parser.add_argument(
         '--tv_lambda',
         type=float,
-        default=1e-5,
+        default=1e-4,
         help='Weight for the Total Variation regularization term.'
     )
     parser.add_argument(
