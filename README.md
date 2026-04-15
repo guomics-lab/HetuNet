@@ -98,9 +98,9 @@ python main.py \
     --mask_path ./demo/demo_mask.pkl \
     --protein_path ./demo/demo_row_col_data.csv \
     --output_dir ./outputs_test \
-    --epochs 25 \
+    --epochs 50 \
     --batch_size 128 \
-    --lr 0.001 \
+    --lr 0.0001 \
     --tv_lambda 1e-4 \
     --correlation_lambda 5.0 \
     --patch_size 13 \
@@ -136,9 +136,9 @@ python main.py \
 
 #### Optional Arguments
 
-- `--epochs`: Number of training epochs (default: 25)
+- `--epochs`: Number of training epochs (default: 50)
 - `--batch_size`: Batch size for training (default: 128)
-- `--lr`: Base learning rate (default: 0.001)
+- `--lr`: Base learning rate (default: 0.0001)
 - `--cnn_lr_fold`: CNN learning rate multiplier (default: 0.53)
 - `--tv_lambda`: Total Variation regularization weight (default: 1e-4)
 - `--correlation_lambda`: Pearson correlation loss weight (default: 5.0)
