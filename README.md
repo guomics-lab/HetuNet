@@ -172,9 +172,9 @@ This notebook provides the following capabilities:
 2. Open and run `Visualization.ipynb` step by step in your Jupyter environment.
 
 > **Note:** Please ensure that the following paths are correctly set:
-- `checkpoint_path`
-- `mask_path`
-- `output_h5ad_path`
+> - `checkpoint_path`
+> - `mask_path`
+> - `output_h5ad_path`
 
 
 ## Model Architecture
