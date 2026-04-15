@@ -98,7 +98,7 @@ python main.py \
     --mask_path ./demo/demo_mask.pkl \
     --protein_path ./demo/demo_row_col_data.csv \
     --output_dir ./outputs_test \
-    --epochs 50 \
+    --epochs 25 \
     --batch_size 128 \
     --lr 0.0001 \
     --tv_lambda 1e-4 \
@@ -106,7 +106,7 @@ python main.py \
     --patch_size 13 \
     --seed 888 \
     --num_workers 4 \
-    --protein_name "VIM,CDH1" \
+    --protein_name "VIM,MS4A1" \
     --fill_na True
 ```
 
@@ -136,7 +136,7 @@ python main.py \
 
 #### Optional Arguments
 
-- `--epochs`: Number of training epochs (default: 50)
+- `--epochs`: Number of training epochs (default: 25)
 - `--batch_size`: Batch size for training (default: 128)
 - `--lr`: Base learning rate (default: 0.0001)
 - `--cnn_lr_fold`: CNN learning rate multiplier (default: 0.53)
