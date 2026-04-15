@@ -129,7 +129,7 @@ python main.py \
 
 #### Required Arguments
 
-- `--image_path`: Path to the high-resolution ome.tif image file
+- `--image_path`: Path to the high-resolution .tif/ome.tif image file
 - `--mask_path`: Path to the tissue mask pickle file
 - `--protein_path`: Path to the protein data CSV file
 - `--output_dir`: Directory to save checkpoints and logs
