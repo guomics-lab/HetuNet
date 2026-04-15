@@ -15,6 +15,7 @@ A modular deep learning pipeline for spatio-temporal protein reconstruction usin
 ```
 HetuNet/
 ├── main.py                           # Main entry point
+├── Visualization.ipynb               # Process the reconstructed spatial protein maps for visualization and downstream analysis.
 ├── requirements.txt                  # Project dependencies
 ├── README.md                         # This file
 ├── .gitignore                        # Git ignore rules
@@ -155,6 +156,26 @@ The training process generates the following outputs in the specified output dir
 
 - `epoch_XXXX.pth`: Checkpoint files containing model weights, optimizer state, and predictions
 - `loss_curve_total.png`: Total training loss curve
+
+## Visualization and Downstream Analysis
+
+After training the model, you can use the provided Jupyter Notebook (`Visualization.ipynb`) to process the reconstructed spatial protein maps for visualization and downstream analysis.
+
+This notebook provides the following capabilities:
+- **Format Conversion**: Extracts the predicted matrices from the training outputs and converts them into the standard AnnData (`.h5ad`) format.
+- **Spatial Visualization**: Generates intuitive, high-quality spatial expression maps for the reconstructed proteins.
+- **Seamless Integration**: The generated `.h5ad` files can be directly loaded into popular single-cell and spatial omics analysis frameworks (such as [Scanpy](https://scanpy.readthedocs.io/) and [Squidpy](https://squidpy.readthedocs.io/)) for clustering, neighborhood analysis, and more.
+
+#### How to use:
+
+1. Make sure you have the necessary data science packages installed (e.g., `anndata`, `scanpy`, `matplotlib`, 'tqdm'). You can install them via pip or conda.
+2. Open and run `Visualization.ipynb` step by step in your Jupyter environment.
+
+> **Note:** Please ensure that the following paths are correctly set:
+- `checkpoint_path`
+- `mask_path`
+- `output_h5ad_path`
+
 
 ## Model Architecture
 
