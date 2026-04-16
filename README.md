@@ -168,7 +168,7 @@ This notebook provides the following capabilities:
 
 #### How to use:
 
-1. Make sure you have the necessary data science packages installed (e.g., `anndata`, `scanpy`, `matplotlib`, 'tqdm'). You can install them via pip or conda.
+1. Make sure you have the necessary data science packages installed (e.g., `anndata`, `scanpy`, `matplotlib`, `tqdm`). You can install them via pip or conda.
 2. Open and run `Visualization.ipynb` step by step in your Jupyter environment.
 
 > **Note:** Please ensure that the following paths are correctly set:
