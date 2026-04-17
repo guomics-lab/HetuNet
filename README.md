@@ -30,7 +30,8 @@ HetuNet/
 └── demo/                             # Demo data
     ├── demo_IF_image.tif             # Demo input image
     ├── demo_row_col_data.csv         # Demo input expression_data
-    └── demo_mask.pkl                 # Demo input mask
+    ├── demo_mask.pkl                 # Demo input mask
+    └── demo_ground_truth.h5ad        # Demo ground truth
 ```
 
 ## Features
