@@ -107,14 +107,7 @@ python main.py \
 5. **Testing**: Each module can be tested independently
 6. **Documentation**: Better organized and more comprehensive
 
-### 6. Backward Compatibility
-
-The original script has been preserved as:
-```
-_backup_CNN_based_reconstruction_27features_cor_rawnorm_ifmedian_multiGPU.py
-```
-
-### 7. Next Steps
+### 6. Next Steps
 
 Potential future improvements:
 1. Add unit tests for each module
