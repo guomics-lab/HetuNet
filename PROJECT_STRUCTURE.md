@@ -8,9 +8,10 @@ HetuNet/
 ├── 📄 main.py                              # Main entry point
 │   └── Orchestrates: parse_args() → load_data() → train_model()
 │
+├── 📄 Visualization.ipynb                  # Process the reconstructed spatial protein maps for visualization and downstream analysis.
 ├── 📄 requirements.txt                     # Project dependencies
 ├── 📄 README.md                            # User documentation
-├── 📄 REFACTORING_NOTES.md                # Developer documentation
+├── 📄 REFACTORING_NOTES.md                 # Developer documentation
 ├── 📄 .gitignore                           # Git ignore rules
 │
 ├── 📁 src/                                 # Source code package
@@ -44,7 +45,11 @@ HetuNet/
 │       ├── def plot_loss_curve()           # Loss visualization
 │       └── def fill_na_with_neighbor_mean() # Data preprocessing helper
 │
-└── 📄 _backup_*.py                         # Original monolithic script (backup)
+└── 📁 demo/                                # Demo data
+    ├── demo_IF_image.tif                   # Demo input image
+    ├── demo_row_col_data.csv               # Demo input expression_data
+    ├── demo_mask.pkl                       # Demo input mask
+    └── demo_ground_truth.h5ad              # Demo ground truth
 ```
 
 ## Data Flow
