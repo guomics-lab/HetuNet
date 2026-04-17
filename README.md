@@ -4,11 +4,11 @@ A modular deep learning pipeline for spatio-temporal protein reconstruction usin
 
 ### FAXP2.0 Workflow
 
-![FAXP2.0 Workflow](images/FAXP2.0_Workflow.png)
+![FAXP2.0 Workflow](./images/FAXP2.0_Workflow.png)
 
 ### Schematic of the HetuNet
 
-![HetuNet Method Schematic](images/HetuNet_method_schematic.png)
+![HetuNet Method Schematic](./images/HetuNet_method_schematic.png)
 
 
 
