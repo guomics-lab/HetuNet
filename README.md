@@ -3,10 +3,10 @@
 A modular deep learning pipeline for spatio-temporal protein reconstruction using multi-scale CNN architecture.
 
 ### FAXP2.0 Workflow
-<img width="4270" height="1781" alt="Git_figure_demo1" src="https://github.com/user-attachments/assets/7aec5c68-6496-4173-aa85-92ba0e1ed07d" />
+![FAXP2.0 Workflow](images/FAXP2.0 Workflow.png)
 
-### Schematic of the HetuNet algorithm
-<img width="4251" height="1523" alt="Git_figure_demo2" src="https://github.com/user-attachments/assets/3a8657dd-7ab6-4d2d-96d8-a1bde1e55495" />
+### Schematic of the HetuNet
+![HetuNet Method Schematic](images/HetuNet_method_schematic.png)
 
 
 
