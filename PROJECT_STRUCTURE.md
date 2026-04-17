@@ -158,13 +158,13 @@ python main.py \
     --mask_path /path/to/mask.pkl \
     --protein_path /path/to/protein_data.csv \
     --output_dir ./outputs \
-    --epochs 200 \
-    --batch_size 32 \
+    --epochs 225 \
+    --batch_size 128 \
     --lr 0.0001 \
-    --tv_lambda 1e-5 \
+    --tv_lambda 1e-4 \
     --correlation_lambda 1.0 \
-    --patch_size 25 \
-    --protein_name "VIM,CDH1" \
+    --patch_size 13 \
+    --protein_name "VIM,MS4A1" \
     --no_resume
 ```
 
